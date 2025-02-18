@@ -8,7 +8,8 @@
             "app_name": "Zendesk",
             "app_description": "Forwarding Zendesk tickets to support channel",
             "app_logo": "https://media.licdn.com/dms/image/v2/D4D22AQEyk97zALcaQg/feedshare-shrink_1280/B4DZUBeEXbGkAo-/0/1739486415120?e=1742428800&v=beta&t=899xqN8pZSfv-5AV7pnMU2NNTpCnfudDFFYMK6_34kM",
-            "background_color": "#fff"
+            "background_color": "#fff",
+            "app_url": "https://telex-json.vercel.app/"
         },
         "is_active": true,
         "integration_type": "modifier",
@@ -22,7 +23,6 @@
                 "default": "support"
             }
         ],
-        "target_url": "https://9c42-105-113-63-105.ngrok-free.app/zendesk-integration/",
-        "app_url": "https://telex-json.vercel.app/"
+        "target_url": "https://9c42-105-113-63-105.ngrok-free.app/zendesk-integration/"
     }
 }
