@@ -12,6 +12,7 @@
             "app_url": "https://telex-json.vercel.app/"
         },
         "is_active": true,
+        "integration_category": "Monitoring & Logging",
         "integration_type": "modifier",
         "key_features": ["ticket support", "complaint resolution"],
         "author": "Kenward Terhemba",
