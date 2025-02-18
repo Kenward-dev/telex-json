@@ -22,6 +22,7 @@
                 "default": "support"
             }
         ],
-        "target_url": "https://9c42-105-113-63-105.ngrok-free.app/zendesk-integration/"
+        "target_url": "https://9c42-105-113-63-105.ngrok-free.app/zendesk-integration/",
+        "app_url": "https://telex-json.vercel.app/"
     }
 }
