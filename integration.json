@@ -1,42 +1,85 @@
 {
-    "date": {
-        "created_at": "2025-02-18",
-        "updated_at": "2025-02-18"
-    },
-    "descriptions": {
-        "app_name": "ZenDesk integration",
-        "app_description": "Forwarding ZenDesk tickets to support channel.",
-        "app_logo": "https://media.licdn.com/dms/image/v2/D4D22AQEyk97zALcaQg/feedshare-shrink_1280/B4DZUBeEXbGkAo-/0/1739486415120?e=1742428800&v=beta&t=899xqN8pZSfv-5AV7pnMU2NNTpCnfudDFFYMK6_34kM",
-        "app_url": "https://telex-json.vercel.app/",
-        "background_color": "#4A90E2"
-    },
-    "target_url": "https://comprehensive-elianore-kenward-b7e861a6.koyeb.app/zendesk-integration",
-    "key_features": ["ticket support", "complaint resolution"],
-    "settings": [
-        {
-            "label": "channelId",
-            "type": "string",
-            "description": "The ID of the channel to send ZenDesk tickets to",
-            "required": false
+    "data": {
+        "date": {
+            "created_at": "2025-02-18",
+            "updated_at": "2025-02-18"
         },
-        {
-            "label": "support",
-            "type": "text",
-            "description": "support",
-            "required": true
-        }
-    ],
-    "endpoints": [
-        {
-            "path": "/zendesk-integration",
-            "method": "POST",
-            "description": "Receives tickets from ZenDesk and forwards it to support channel"
+        "descriptions": {
+            "app_name": "ZenDesk integration",
+            "app_description": "Forwarding ZenDesk tickets to support channel.",
+            "app_logo": "https://media.licdn.com/dms/image/v2/D4D22AQEyk97zALcaQg/feedshare-shrink_1280/B4DZUBeEXbGkAo-/0/1739486415120?e=1742428800&v=beta&t=899xqN8pZSfv-5AV7pnMU2NNTpCnfudDFFYMK6_34kM",
+            "app_url": "https://telex-json.vercel.app/",
+            "background_color": "#4A90E2"
         },
-        {
-            "path": "/",
-            "method": "GET",
-            "description": "Endpoint to check configuration json file"
-        }
-    ],
-    "is_active": true
+        "integration_category": "CRM & Customer Support",
+        "integration_type": "modifier",
+        "is_active": false,
+        "output": [
+            {
+                "label": "support",
+                "value": true
+            },
+            {
+                "label": "general",
+                "value": false
+            }
+        ],
+        "key_features": ["ticket support", "complaint resolution"],
+        "permissions": {
+            "monitoring_user": {
+                "always_online": true,
+                "display_name": "Customer support"
+            }
+        },
+        "settings": [
+            {
+                "label": "channelId",
+                "type": "string",
+                "description": "The ID of the channel to send ZenDesk tickets to",
+                "default": "",
+                "required": false
+            },
+            {
+                "label": "support",
+                "type": "text",
+                "description": "support",
+                "default": "",
+                "required": true
+            },
+            {
+                "label": "Gender",
+                "type": "radio",
+                "required": true,
+                "default": "Male",
+                "options": ["Male", "Female"]
+            },
+            {
+                "label": "Key",
+                "type": "text",
+                "required": true,
+                "default": "1234567890"
+            },
+            {
+                "label": "Do you want to continue",
+                "type": "checkbox",
+                "required": true,
+                "default": "Yes"
+            },
+            {
+                "label": "Sensitivity Level",
+                "type": "dropdown",
+                "required": true,
+                "default": "Low",
+                "options": ["High", "Low"]
+            },
+            {
+                "label": "Alert Admin",
+                "type": "multi-checkbox",
+                "required": true,
+                "default": "Super-Admin",
+                "options": ["Super-Admin", "Admin", "Manager", "Developer"]
+            }
+        ],
+        "target_url": "https://comprehensive-elianore-kenward-b7e861a6.koyeb.app/zendesk-integration"
+    }
 }
