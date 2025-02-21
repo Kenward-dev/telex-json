@@ -33,51 +33,32 @@
         },
         "settings": [
             {
-                "label": "channelId",
+                "label": "channel_id",
                 "type": "string",
-                "description": "The ID of the channel to send ZenDesk tickets to",
-                "default": "",
-                "required": false
-            },
-            {
-                "label": "support",
-                "type": "text",
-                "description": "support",
-                "default": "",
+                "description": "The unique identifier for the Telex channel",
+                "default": "0195154a-3c62-7f11-9cb0-8e892cd7d3ce",
                 "required": true
             },
             {
-                "label": "Gender",
-                "type": "radio",
-                "required": true,
-                "default": "Male",
-                "options": ["Male", "Female"]
+                "label": "maxMessageLength",
+                "type": "number",
+                "description": "Set the maximum length for incoming messages to format",
+                "default": 30,
+                "required": true
             },
             {
-                "label": "Key",
-                "type": "text",
-                "required": true,
-                "default": "1234567890"
+                "label": "repeatWords",
+                "type": "multi-select",
+                "description": "Set the words that need to be repeated",
+                "default": "world, happy",
+                "required": true
             },
             {
-                "label": "Do you want to continue",
-                "type": "checkbox",
-                "required": true,
-                "default": "Yes"
-            },
-            {
-                "label": "Sensitivity Level",
-                "type": "dropdown",
-                "required": true,
-                "default": "Low",
-                "options": ["High", "Low"]
-            },
-            {
-                "label": "Alert Admin",
-                "type": "multi-checkbox",
-                "required": true,
-                "default": "Super-Admin",
-                "options": ["Super-Admin", "Admin", "Manager", "Developer"]
+                "label": "noOfRepetitions",
+                "type": "number",
+                "description": "Set the number of repetitions for words that need to be repeated",
+                "default": 2,
+                "required": true
             }
         ],
         "target_url": "https://comprehensive-elianore-kenward-b7e861a6.koyeb.app/zendesk-integration"
