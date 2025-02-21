@@ -31,13 +31,13 @@
                 "display_name": "Customer support"
             }
         },
-        "channel_id": "0195154a-3c62-7f11-9cb0-8e892cd7d3ce",
+        "channel_id": "0195297d-0d61-7ee2-a523-2f3b8f63d9f8",
         "settings": [
             {
                 "label": "channel_id",
                 "type": "string",
                 "description": "The unique identifier for the Telex channel",
-                "default": "0195154a-3c62-7f11-9cb0-8e892cd7d3ce",
+                "default": "0195297d-0d61-7ee2-a523-2f3b8f63d9f8",
                 "required": true
             },
             {
