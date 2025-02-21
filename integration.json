@@ -44,7 +44,7 @@
                 "label": "maxMessageLength",
                 "type": "number",
                 "description": "Set the maximum length for incoming messages to format",
-                "default": 30,
+                "default": 100,
                 "required": true
             },
             {
