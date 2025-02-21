@@ -13,7 +13,7 @@
         },
         "integration_category": "CRM & Customer Support",
         "integration_type": "modifier",
-        "is_active": false,
+        "is_active": true,
         "output": [
             {
                 "label": "support",
