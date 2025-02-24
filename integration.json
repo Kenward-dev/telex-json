@@ -46,20 +46,6 @@
                 "description": "Set the maximum length for incoming messages to format",
                 "default": 100,
                 "required": true
-            },
-            {
-                "label": "repeatWords",
-                "type": "multi-select",
-                "description": "Set the words that need to be repeated",
-                "default": "world, happy",
-                "required": true
-            },
-            {
-                "label": "noOfRepetitions",
-                "type": "number",
-                "description": "Set the number of repetitions for words that need to be repeated",
-                "default": 2,
-                "required": true
             }
         ],
         "target_url": "https://ratty-goldarina-kenward-15941202.koyeb.app/zendesk-integration"
